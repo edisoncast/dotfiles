@@ -9,6 +9,16 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Aliases
+if [ -f "$HOME/.aliases" ]; then
+  source "$HOME/.aliases"
+fi
+
+# Custom environment vars
+if [ -f "$HOME/.customvars" ]; then
+  source "$HOME/.customvars"
+fi
+
 export EDITOR=vim
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8

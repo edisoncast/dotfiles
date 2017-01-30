@@ -83,7 +83,7 @@ echo '----------------'
 echo 'INSTALLING DOTFILES'
 
 
-DOTFILES="tmux.conf vimrc zshrc"
+DOTFILES="tmux.conf vimrc zshrc aliases"
 for dotfile in $DOTFILES
 do
   install_dotfile $dotfile
