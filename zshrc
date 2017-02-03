@@ -23,4 +23,6 @@ export EDITOR=vim
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export TERM=screen-256color-bce
+# Hide Docker legacy commands in --help (Since Docker 1.13)
+export DOCKER_HIDE_LEGACY_COMMANDS=1
 source ~/.dotfiles/tmuxinator.zsh
