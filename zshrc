@@ -26,3 +26,7 @@ export TERM=screen-256color-bce
 # Hide Docker legacy commands in --help (Since Docker 1.13)
 export DOCKER_HIDE_LEGACY_COMMANDS=1
 source ~/.dotfiles/tmuxinator.zsh
+
+if [ "$(tmux ls 2> /dev/null | wc -l)" -eq "0" ]; then
+  tmuxinator general
+fi
